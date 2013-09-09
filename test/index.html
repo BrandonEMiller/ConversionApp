@@ -1,0 +1,56 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mocha Spec Runner</title>
+    <link rel="stylesheet" href="lib/mocha/mocha.css">
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="lib/mocha/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <!-- assertion framework -->
+    <script src="lib/chai.js"></script>
+    <script>var expect = chai.expect</script>
+
+    <!-- include source files here... -->
+    <script src="../app/bower_components/jquery/jquery.js"></script>
+     <script src="../app/scripts/main.js"></script> 
+
+    <!-- include spec files here... -->
+    <script src="spec/test.js"></script>
+
+    <script>mocha.run()</script>
+
+    <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <h3 class="text-muted">ConversionApp</h3>
+            </div>
+
+            <div class="jumbotron">
+                <h1>Welcome to a standard unit conversion application</h1>
+                <p class="lead">Always a pleasure scaffolding your apps.</p>
+               
+                <input class="inches-input"  placeholder="Inches"></input>
+                <input class="feet-input" placeholder="Feet"></input>
+                <input class="yards-input" placeholder="Yards"></input>
+                <input class="centimeters-input" placeholder="Centimeters"></input>
+                <input class="meters-input" placeholder="meters"></input>
+
+
+                 <p><a class="btn btn-lg btn-success" href="#">Convert</a></p>
+
+                 <div class="conversion-list">
+                    <h2>Conversion List</h2>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+</body>
+</html>
