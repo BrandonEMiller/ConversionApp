@@ -14,9 +14,6 @@ function MeasurementLength (option) {
     getFormValues()
     fillObject (input)
     conversionListUpdate (input)
-    $('input-inches').val(input.inches)
-	$('input-feet').val(input.feet)
-	$('input-yards').val(input.yards)
   })
 
 
